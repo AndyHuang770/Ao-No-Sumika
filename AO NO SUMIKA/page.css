@@ -1,0 +1,195 @@
+html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.headerFont {
+    font-size: 15px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.vertCentered {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*header*/
+
+#header-el {
+    width: 100%;
+    background-color: hsl(189, 93%, 45%);
+    display: flex;
+    position: fixed;
+    height: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#logo {
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltipContent {
+    opacity: 0;
+    transition: 0.15s ease-in-out;
+    position: absolute;
+    top: 30px;
+    left: -3px;
+    pointer-events: none;
+}
+
+.tooltip .tooltipContent-right {
+    opacity: 0;
+    transition: 0.15s ease-in-out;
+    position: absolute;
+    top: 30px;
+    left: -900px;
+    pointer-events: none;
+}
+
+.tooltipContent {
+    position: absolute;
+}
+
+.tooltipContent-right {
+    position: absolute;
+}
+
+.tooltip:hover {
+    display: inline;
+    font-weight: bold;
+}
+
+.tooltip:hover {
+    content: "Gojover";
+}
+
+.tooltip:hover .tooltipContent {
+    opacity: 1;
+    /* animation: fadeIn 0.5s step-end; */
+}
+
+.tooltip:hover .tooltipContent-right {
+    opacity: 1;
+    /* animation: fadeIn 0.5s step-end; */
+}
+
+/* @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} */
+
+/* top */
+
+.topFont {
+    font-size: 20px;
+    color: white;
+}
+
+#top-space {
+    height: 50px;
+    background-color: hsl(189, 93%, 45%);
+}
+
+#album {
+    margin-left: 90px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sub-info {
+    display: flex;
+    row-gap: 100%;
+    margin-bottom: 15px;
+}
+
+.sub-info-el {
+    align-items: center;
+}
+
+.sub-info-right {
+    margin-left: 15px;
+}
+
+.info-icon {
+    width: 17px;
+    height:17px;
+    margin-right: 3px;
+}
+
+#top-section {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(hsl(189, 93%, 45%) 0%, hsl(180, 51%, 32%) 100%);
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* body */
+
+#youtube {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 200px;
+
+}
+
+#lyrics {
+    margin-left: 200px;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+/* footer */
+
+footer {
+    background-color: hsl(189, 93%, 45%);
+    width: 100%;
+    margin-bottom: none;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#instagram-logo {
+    width: 25px;
+}
+    
+
+
